@@ -46,7 +46,7 @@ public class ProductServiceController {
       productRepo.remove(id);
       product.setId(id);
       productRepo.put(id, product);
-      return new ResponseEntity<>("Product is updated successsfully", HttpStatus.OK);
+      return new ResponseEntity<>("Product is updated successfully", HttpStatus.OK);
    }
    
    @RequestMapping(value = "/products", method = RequestMethod.POST)
